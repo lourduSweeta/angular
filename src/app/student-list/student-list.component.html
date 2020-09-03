@@ -1,0 +1,31 @@
+    <table class="table mx-auto w-auto" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students"> 
+            <th scope="row">{{student.id}}</th>
+            <td>{{student.name}}</td>
+            <td>{{student.email}}</td>
+            <td><button type="button" class="btn btn-primary" (click) = "selectStudent(student)">Show Details</button></td>
+          </tr>          
+        </tbody>
+      </table>
+  <div *ngIf="selectedStudent" class="row justify-content-center">      
+      <div class="card mb-3" style="width: 18rem; ">
+        <div class="card-header">
+            {{selectedStudent.id}}
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{selectedStudent.name}}</li>
+          <li class="list-group-item">{{selectedStudent.email}}</li>
+
+        </ul>
+      </div>
+  </div>      
+

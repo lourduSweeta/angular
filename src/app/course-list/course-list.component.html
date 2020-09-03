@@ -1,0 +1,22 @@
+
+<div *ngFor="let course of courses" style="align-items: center; justify-content: center; width: 75%;">
+
+    <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-2">
+            <img src="{{course.image}}" class="card-img" alt="{{course.title}}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{course.title}}</h5>
+              <p class="card-text">{{course.description}}</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>               
+            </div>
+            <div class="card-body">
+                <button type="button" title="Register" class="btn btn-primary">Register</button>
+            </div>            
+          </div>
+          
+        </div>
+      </div>
+</div>

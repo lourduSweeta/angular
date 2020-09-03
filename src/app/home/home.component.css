@@ -1,0 +1,12 @@
+.bg-img
+{
+    height:100%; 
+    background-image: url('../../assets/images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.jumbo-text
+{
+ color: white;
+}
